@@ -12,7 +12,7 @@ public with sharing class NCS_VatVerificationCall {
         req.setEndpoint(endpoint);
         httpResponse res = h.send(req);
 
-        //parse XML-RPC response
+        //parse XML-RPC response   
         Dom.Document doc = res.getBodyDocument();
         Dom.XmlNode methodResponse = doc.getRootElement();
         List<String>returnedResults = new List<String>();
@@ -26,7 +26,8 @@ public with sharing class NCS_VatVerificationCall {
         //prepare return statement
         List<Results> resultList = new List<Results>();
         Results result = new Results();
-        result.callResult = getResultText(returnedResults[3], returnedResults[13], returnedResults[23], returnedResults[25]);
+        result.callResult = getResultText(returnedResults[3], returnedResults[13], returnedResults[23], returnedResults[25], requestList[0].ustId2);
+        result.callResultXml = res.getBody();
         resultList.add(result);
         return resultList;
     }
@@ -42,12 +43,15 @@ public with sharing class NCS_VatVerificationCall {
     public class Results {
         @InvocableVariable(label='Result' required=true)
         public String callResult;
+
+        @InvocableVariable(label='Result XML' required=true)
+        public String callResultXml;
     }
 
-    public static String getResultText(String errorCode, String requestedDate, String validFrom, String validTo) {
+    public static String getResultText(String errorCode, String requestedDate, String validFrom, String validTo, String vatNumber) {
         switch on errorCode {
             when '200' {
-                return Label.VAT_200 + ' - Date: ' + requestedDate;
+                return Label.VAT_200.replace('{vatNumber}', vatNumber) + ' - Date: ' + requestedDate;
             }
             when '201' {
                 return Label.VAT_201 + ' - Date: ' + requestedDate;
