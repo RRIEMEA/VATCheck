@@ -1,0 +1,463 @@
+@isTest
+public with sharing class NCS_VatVerificationCallTest {
+    
+    public class API_ResponseMock217 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>217</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock200 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>200</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock201 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>201</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock202 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>202</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock203 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>203</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock204 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>204</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock205 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>205</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock206 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>206</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock208 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>208</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock209 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>209</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock210 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>210</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock211 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>211</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock212 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>212</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock213 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>213</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock214 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>214</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock215 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>215</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock221 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>221</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock999 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>999</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+
+    public class API_ResponseMock666 implements HttpCalloutMock {
+        
+        public HTTPResponse respond(HTTPRequest request) {
+            HttpResponse response = new HttpResponse();
+            response.setBody('<params><param><value><array><data><value><string>UstId_1</string></value><value><string>DE293212376</string></value></data></array></value></param><param><value><array><data><value><string>ErrorCode</string></value><value><string>666</string></value></data></array></value></param><param><value><array><data><value><string>UstId_2</string></value><value><string>ESB01633957</string></value></data></array></value></param><param><value><array><data><value><string>Druck</string></value><value><string>nein</string></value></data></array></value></param><param><value><array><data><value><string>Erg_PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Datum</string></value><value><string>03.06.2022</string></value></data></array></value></param><param><value><array><data><value><string>PLZ</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Ort</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Uhrzeit</string></value><value><string>23:25:04</string></value></data></array></value></param><param><value><array><data><value><string>Erg_Name</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_ab</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Gueltig_bis</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Strasse</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Firmenname</string></value><value><string></string></value></data></array></value></param><param><value><array><data><value><string>Erg_Str</string></value><value><string></string></value></data></array></value></param></params>');
+            response.setStatusCode(200);
+            return response;
+        }
+    }
+    
+    @testSetup static void setup() {
+    
+    }
+
+    @isTest 
+    static void testMethod200() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock200());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod201() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock201());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod202() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock202());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod203() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock203());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod204() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock204());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod217() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock217());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod205() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock205());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod206() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock206());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod208() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock208());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod209() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock209());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod210() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock210());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod211() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock211());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod212() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock212());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod213() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock213());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod214() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock214());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod215() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock215());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod221() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock221());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod999() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock999());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+
+    @isTest 
+    static void testMethod666() {
+        
+        Test.setMock(HttpCalloutMock.class, new API_ResponseMock666());
+
+        List<NCS_VatVerificationCall.Requests> requests = new List<NCS_VatVerificationCall.Requests>();
+        NCS_VatVerificationCall.Requests request = new NCS_VatVerificationCall.Requests();
+        request.ustId1 = 'DE123456789';
+        request.ustId2 = 'NL123456789';
+        requests.add(request);
+
+        NCS_VatVerificationCall.execute(requests);
+    }
+}
