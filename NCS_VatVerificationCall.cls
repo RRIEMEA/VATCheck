@@ -3,6 +3,7 @@ public with sharing class NCS_VatVerificationCall {
     @InvocableMethod(callout=true label='VAT Verification' description='Verifies if Non German VAT Number is valid')
     public static List<Results> execute (List<Requests> requestList) {
 
+        //callout
         HTTP h = new HTTP();
         String httpMethod = 'GET';
         String endpoint = 'https://evatr.bff-online.de/evatrRPC?UstId_1=' + requestList[0].ustId1 + '&UstId_2=' + requestList[0].ustId2;
@@ -27,7 +28,6 @@ public with sharing class NCS_VatVerificationCall {
         Results result = new Results();
         result.callResult = getResultText(returnedResults[3], returnedResults[13], returnedResults[23], returnedResults[25]);
         resultList.add(result);
-        system.debug(resultList);
         return resultList;
     }
 
