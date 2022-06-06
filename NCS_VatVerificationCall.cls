@@ -6,30 +6,40 @@ public with sharing class NCS_VatVerificationCall {
         //callout
         HTTP h = new HTTP();
         String httpMethod = 'GET';
-        String endpoint = 'https://evatr.bff-online.de/evatrRPC?UstId_1=' + requestList[0].ustId1 + '&UstId_2=' + requestList[0].ustId2;
+        String endpoint = 'https://evatr.bff-online.de/evatrRPC?UstId_1=' + requestList[0].ustId1 + '&UstId_2=' + requestList[0].ustId2.replaceAll('\\s+', '');
         httpRequest req = new httpRequest();
         req.setMethod(httpMethod);
         req.setEndpoint(endpoint);
         httpResponse res = h.send(req);
 
-        //parse XML-RPC response   
-        Dom.Document doc = res.getBodyDocument();
-        Dom.XmlNode methodResponse = doc.getRootElement();
-        List<String>returnedResults = new List<String>();
-        for(Dom.XmlNode dNode : methodResponse.getChildElements()){
-            for(Dom.XmlNode dNodeChild : dnode.getChildElement('value', null).getChildElement('array', null).getChildElement('data', null).getChildElements()) {
-                String returnedResult = dNodeChild.getChildElement('string', null).getText();
-                returnedResults.add(returnedResult);
+        if(res.getStatusCode() == 200) {
+            //parse XML-RPC response   
+            Dom.Document doc = res.getBodyDocument();
+            Dom.XmlNode methodResponse = doc.getRootElement();
+            List<String>returnedResults = new List<String>();
+            for(Dom.XmlNode dNode : methodResponse.getChildElements()){
+                for(Dom.XmlNode dNodeChild : dnode.getChildElement('value', null).getChildElement('array', null).getChildElement('data', null).getChildElements()) {
+                    String returnedResult = dNodeChild.getChildElement('string', null).getText();
+                    returnedResults.add(returnedResult);
+                }
             }
+            
+            //prepare return statement
+            List<Results> resultList = new List<Results>();
+            Results result = new Results();
+            result.callResult = getResultText(returnedResults[3], returnedResults[13], returnedResults[23], returnedResults[25], requestList[0].ustId2);
+            result.callResultXml = res.getBody();
+            resultList.add(result);
+            return resultList;
+        } else {
+            system.debug('HTTP Error: ' + res.getStatusCode());
+            List<Results> resultList = new List<Results>();
+            Results result = new Results();
+            result.callResult = 'An Error occured while calling the VAT Verification Service. Pls. contact your system administrator.';
+            result.callResultXml = res.getBody();
+            resultList.add(result);
+            return resultList;
         }
-        
-        //prepare return statement
-        List<Results> resultList = new List<Results>();
-        Results result = new Results();
-        result.callResult = getResultText(returnedResults[3], returnedResults[13], returnedResults[23], returnedResults[25], requestList[0].ustId2);
-        result.callResultXml = res.getBody();
-        resultList.add(result);
-        return resultList;
     }
 
     public class Requests {
