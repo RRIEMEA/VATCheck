@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>PVM_InvoiceCancelledSuccess</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice Cancelled Success</shortDescription>
+        <value>Invoice cancellation successfully created. Redirecting...</value>
+    </labels>
+    <labels>
+        <fullName>StatusDraftError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error: Invoice status updated to Draft</shortDescription>
+        <value>Status can&apos;t be set back to Draft.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_200</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-200</shortDescription>
+        <value>The requested VAT Number {vatNumber} is valid.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_201</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-201</shortDescription>
+        <value>The requested VAT Number is NOT valid!</value>
+    </labels>
+    <labels>
+        <fullName>VAT_202</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-202</shortDescription>
+        <value>The requested VAT Number is NOT valid. It is not in the companyfile of the requested EU-Member Country registered.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_203</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-203</shortDescription>
+        <value>The requested VAT Number in NOT valid. It is only valid from {validFrom}.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_204</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-204</shortDescription>
+        <value>The requested VAT Number is NOT valid. It was valid from {validFrom} until {validTo}.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_205</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-205</shortDescription>
+        <value>Your request can currently either not be answered by the requested EU-Member Country or due to another reason. Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_206</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-206</shortDescription>
+        <value>Your german VAT Id in invalid. Your request in not possible for this reason.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_208</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-208</shortDescription>
+        <value>There is a concurrent request for your requested VATId. Please try again later.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_209</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-209</shortDescription>
+        <value>The requested VAT Id is NOT valid. It does not match the VAT Number pattern of the requested EU-Member country.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_210</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-210</shortDescription>
+        <value>The requested VAT Id in NOT valid. The checkdigit is not correct.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_211</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-211</shortDescription>
+        <value>The requested VAT ID is NOT valid. It contains invalid characters.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_212</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-212</shortDescription>
+        <value>The requested VAT Id is NOT valid. It contains an invalid country code.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_213</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-213</shortDescription>
+        <value>You are not eligible to request a german VAT Id.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_214</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-214</shortDescription>
+        <value>You german VAT ID is not correct. It must start with DE, followed by 9 numbers.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_215</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-215</shortDescription>
+        <value>Your request does not contain all necessary Information for the basic request. Your german VAT ID and the requested EU VAT ID.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_217</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-217</shortDescription>
+        <value>The was an error while processing this request in the requested EU-Member Country. Therefore your request could not be finished.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_221</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-221</shortDescription>
+        <value>Your request data are not complete or with a wrong datatype.</value>
+    </labels>
+    <labels>
+        <fullName>VAT_999</fullName>
+        <categories>VatNoCheck</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>VAT-999</shortDescription>
+        <value>Processing your request is currently not possible. Please try again later.</value>
+    </labels>
+</CustomLabels>
