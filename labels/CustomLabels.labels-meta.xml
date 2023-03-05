@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
-        <fullName>PVM_InvoiceCancelledSuccess</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Invoice Cancelled Success</shortDescription>
-        <value>Invoice cancellation successfully created. Redirecting...</value>
-    </labels>
-    <labels>
-        <fullName>StatusDraftError</fullName>
-        <language>en_US</language>
-        <protected>false</protected>
-        <shortDescription>Error: Invoice status updated to Draft</shortDescription>
-        <value>Status can&apos;t be set back to Draft.</value>
-    </labels>
-    <labels>
         <fullName>VAT_200</fullName>
         <categories>VatNoCheck</categories>
         <language>en_US</language>
